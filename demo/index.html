@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Leaflet debug page</title>
+	<title>Leaflet.TouchHover demo</title>
 
 	<!-- Leaflet -->
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
@@ -75,6 +75,8 @@
 			L.control.touchHover().addTo(map);
 		}
 
+		L.Path.CLIP_PADDING = 0.12;
+
 		// control that shows state info on hover
 		var info = L.control();
 
@@ -147,8 +149,7 @@
 		function onEachFeature(feature, layer) {
 			layer.on({
 				mouseover: highlightFeature,
-				mouseout: resetHighlight,
-				click: zoomToFeature
+				mouseout: resetHighlight
 			});
 		}
 
