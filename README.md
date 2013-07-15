@@ -4,6 +4,8 @@ Leaflet.TouchHover
 
 A plugin for adding hover-like interaction to Leaflet maps on mobile devices. Created by [Vladimir Agafonkin](https://github.com/mourner).
 
+[Demo](http://mourner.github.io/Leaflet.TouchHover/demo/) (adapted from the [choropleth tutorial](http://leafletjs.com/examples/choropleth.html); view it on a mobile device)
+
 ## What it does
 
 One problem with implementing hover interaction on mobile devices is that there are no `mouseover` and `mouseout` equivalents on mobile.
