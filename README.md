@@ -6,8 +6,8 @@ A plugin for adding hover-like interaction to Leaflet maps on mobile devices. Cr
 
 ## What it does
 
-One problem with implementing hover interaction on mobile devices is that there are no `mouseover` and `mouseout` equivalents on mobile
-(the spec has `touchenter` and `touchleave` events but they don't work in iOS).
+One problem with implementing hover interaction on mobile devices is that there are no `mouseover` and `mouseout` equivalents on mobile.
+The spec describes `touchenter` and `touchleave` events for that but they are not supported in iOS or Android.
 
 Another problem is that touch-and-move interaction for hovering on features conflicts with the standard dragging functionality in interactive maps.
 
@@ -27,6 +27,9 @@ if (L.Browser.touch) {
 	L.control.touchHover().addTo(map);
 }
 ```
+
+This code will add a hover mode toggle button on mobile devices.
+You can customize its look by adding styles to `leaflet-control-touchhover`, `leaflet-control-touchhover-toggle`, `leaflet-control-touchhover-toggled` classes.
 
 ## License
 
